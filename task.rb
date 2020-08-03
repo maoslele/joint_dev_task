@@ -98,7 +98,8 @@ def q11
   # 以下に回答を記載
   puts "ユーザーの趣味一覧"
   flattes_sports = sports.flatten
-  flattes_sports.each.with_index(1) do |sport, index|
+  sports_new = flattes_sports.uniq
+  sports_new.each.with_index(1) do |sport, index|
     puts "No#{index} #{sport}"
   end
 end
